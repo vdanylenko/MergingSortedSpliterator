@@ -4,6 +4,11 @@ import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 
+/**
+ * Original spliterator from
+ * https://www.javaspecialists.eu/archive/Issue289-MergingSortedSpliterator.html
+ *
+ */
 public class MergingSortedSpliterator<T> implements Spliterator<T> {
     private final List<Spliterator<T>> spliterators;
     private final List<Iterator<T>> iterators;
